@@ -7,7 +7,15 @@
 .image-height{
 height: 800px;
 }
-
+.navbar-brand{
+    font-family: var(--secondary-font);
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  transition: transform 0.6s ease;
+  }
+  .navbar-brand:hover{
+transform: rotate(360deg);
+  }
 .heading{
 font-family: var(--secondary-font);
 font-weight: 900px;
