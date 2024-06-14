@@ -5,20 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
+ <style>
+    .image-height{
+        height: 800px;
+    }
+
+    @media (max-width) {
+        .image-height{
+            height: 300px;
+        }
+    }
+ </style>
+
+
+</head>
   <body>
+
+
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Collection</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="container">
         <div class="row">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/000/original/Pear_Diamond_Tiara_Halo_Ring_Set_w__Lab_Diamond_and_Large_7_Stone_Wedding_Band_-_14k_White_Gold___4_5_%281%29.jpeg?1718392673" class="d-block w-100" alt="...">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/000/original/Pear_Diamond_Tiara_Halo_Ring_Set_w__Lab_Diamond_and_Large_7_Stone_Wedding_Band_-_14k_White_Gold___4_5_%281%29.jpeg?1718392673" class="d-block w-100 image-height" alt="...">
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/014/original/Pear_Lab_Diamond_Ring_Halo_Bridal_Set_Gold_Big_Diamond_Curved_Band.jpeg?1718394017" class="d-block w-100" alt="...">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/014/original/Pear_Lab_Diamond_Ring_Halo_Bridal_Set_Gold_Big_Diamond_Curved_Band.jpeg?1718394017" class="d-block w-100 image-height" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/013/original/Pear_Lab_Diamond_Ring_Halo_Bridal_Set_Rose_Gold_Matching_Wedding_Band.jpeg?1718393893" class="d-block w-100" alt="...">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/013/original/Pear_Lab_Diamond_Ring_Halo_Bridal_Set_Rose_Gold_Matching_Wedding_Band.jpeg?1718393893" class="d-block w-100 image-height" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -30,6 +90,39 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="text-center mt-3 mb-3"id="services">
+            OUR SERVICES
+        </h2>
+        <div class="row">
+            <div class="col-sm-6 text-center mt-2">
+                <h1 class="mt-3 mb-3">
+                    RING SET
+                </h1>
+                <h2 class="ring-name mt-3 mb-3">
+                    Pear Diamond Halo Pave Ring
+                </h2>
+                <p class="mt-3 mb-3">
+                    Crafting digital masterpieces for a jewelry brand that epitomizes class and elegance. From the timeless allure of pear-shaped diamonds to the intricate detailing of halo and pave settings, each ring exudes authenticity and legitimacy. Let's bring the sparkle of true craftsmanship to the digital realm
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/015/original/Oval_Diamond_Vintage_Floral_Ring_Set_w__Lab_Diamond_and_Matching_Wedding_Band_-_14k_Yellow_Gold___4_0.jpeg?1718395714" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/016/original/1_97_cttw_F_SI-2_Pear_Shape_Diamond_Halo_Engagement_Ring_18K_White_Gold.jpeg?1718395726" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/011/original/Oval_Lab_Diamond_Ring_Pave_Band_w__Natural_Diamonds_in_Tiara_Halo_Ring_-_14k_Yellow_Gold___4_0.jpeg?1718393762" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </div>
 
